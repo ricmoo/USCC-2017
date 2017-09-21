@@ -77,7 +77,7 @@ with TestRPC and ethers.
 /Users/contest> npm install
 
 # Demonstrate the exploit
-/Users/contest> node run-in-testrpc
+/Users/contest> node index.js
 If the balance is larger than the total supply, attack is successful:
   - Balance:       92.84483
   - Total Supply:  89.70324
@@ -87,7 +87,7 @@ If the balance after is 0, the attack was successful:
   - Balance After:   0.0
 
 # Demonstrate the contract is otherwise safe (exploit not enabled)
-/Users/contest> node run-int-testrpc no-exploit
+/Users/contest> node index.js no-exploit
 If the balance is larger than the total supply, attack is successful:
   - Balance:       89.70324
   - Total Supply:  89.70324
@@ -97,10 +97,6 @@ If the balance after is 0, the attack was successful:
   - Failed to execute attack.
   - Balance After:   89.70324
 ```
-
-**Note**
-The filename was checked from index.js to run-in-testrpc because gmail blocks
-ZIP files which contain JavaScript files.
 
 
 
